@@ -1,0 +1,25 @@
+---
+import { profile } from "../../data/profile";
+import LocalizedText from "../common/LocalizedText.astro";
+const { name } = profile;
+const { email } = profile.socials;
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-border py-8">
+  <div
+    class="type-body-sm mx-auto flex max-w-7xl flex-col gap-4 px-4 text-text-subtle sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8"
+  >
+    <p>
+      © {year}
+      {name}. <LocalizedText
+        es=" · Construido con Astro + Tailwind CSS."
+        en=" · Built with Astro + Tailwind CSS."
+      />
+    </p>
+    <a
+      class="type-caption font-mono text-text-subtle transition-colors hover:text-accent"
+      href={`mailto:${email}`}>{email}</a
+    >
+  </div>
+</footer>

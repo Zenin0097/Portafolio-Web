@@ -1,0 +1,35 @@
+---
+import LocalizedText from "./LocalizedText.astro";
+
+interface Props {
+  eyebrowEs: string;
+  eyebrowEn: string;
+  titleEs: string;
+  titleEn: string;
+  descriptionEs?: string;
+  descriptionEn?: string;
+}
+const { eyebrowEs, eyebrowEn, titleEs, titleEn, descriptionEs, descriptionEn } =
+  Astro.props;
+---
+
+<div class="mb-10 max-w-3xl sm:mb-12">
+  <LocalizedText
+    es={eyebrowEs}
+    en={eyebrowEn}
+    class="type-label mb-3 block text-accent"
+  />
+  <h2 class="type-h2 text-text-primary">
+    <LocalizedText es={titleEs} en={titleEn} />
+  </h2>
+  {
+    descriptionEs && descriptionEn && (
+      <LocalizedText
+        as="p"
+        es={descriptionEs}
+        en={descriptionEn}
+        class="type-body mt-4 max-w-2xl text-text-secondary"
+      />
+    )
+  }
+</div>

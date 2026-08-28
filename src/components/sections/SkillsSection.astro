@@ -1,0 +1,78 @@
+---
+import skillsData from "../../content/skills.json";
+import type { SkillCategory, Skill } from "../../types/portfolio";
+import LocalizedText from "../common/LocalizedText.astro";
+import SectionHeading from "../common/SectionHeading.astro";
+
+const categories = skillsData as SkillCategory[];
+
+const groupSkills = (skills: Skill[]) => {
+  const groups = new Map<string, Skill[]>();
+
+  for (const skill of skills) {
+    const group = groups.get(skill.category) ?? [];
+    group.push(skill);
+    groups.set(skill.category, group);
+  }
+
+  return Array.from(groups.entries());
+};
+---
+
+<section id="skills" class="py-20 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowEs="Stack"
+      eyebrowEn="Stack"
+      titleEs="Stack tecnológico"
+      titleEn="Technology stack"
+      descriptionEs="Tecnologías organizadas por especialidad y contexto de uso, con iconos SVG extensibles y categorías internas para facilitar la lectura del stack."
+      descriptionEn="Technologies organized by specialty and usage context, with extensible SVG icons and internal categories for faster stack scanning."
+    />
+
+    <div class="grid gap-5 md:grid-cols-3">
+      {
+        categories.map((category) => (
+          <article class="theme-transition rounded-3xl border border-border bg-surface p-5 shadow-sm sm:p-6">
+            <>
+              <header class="mb-7">
+                <h3 class="type-h3 text-text-primary">
+                  <LocalizedText
+                    es={category.title.es}
+                    en={category.title.en}
+                  />
+                </h3>
+                <LocalizedText
+                  as="p"
+                  es={category.description.es}
+                  en={category.description.en}
+                  class="type-body-sm mt-2 max-w-2xl text-text-secondary"
+                />
+              </header>
+              <div class="space-y-7">
+                {groupSkills(category.skills).map(([groupName, skills]) => (
+                  <section aria-label={groupName}>
+                    <div class="mb-3 flex items-center gap-3">
+                      <p class="type-label text-text-muted">{groupName}</p>
+                      <span
+                        class="h-px flex-1 bg-border/70"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols- xl:grid-cols-2">
+                      {skills.map((skill) => (
+                        <span class="group theme-transition inline-flex items-center justify-center rounded-full border border-border bg-surface px-3.5 py-1.5 text-[13px] text-center shadow-sm hover:border-accent/35 hover:bg-surface-raised/40 hover:shadow-md focus-within:border-accent/35 cursor-default">
+                          {skill.name || skill.short}
+                        </span>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

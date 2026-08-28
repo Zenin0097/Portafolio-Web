@@ -1,0 +1,282 @@
+[
+  {
+    "id": "accenture",
+    "organization": "ACCENTURE",
+    "period": {
+      "es": "jul 2024 – actual",
+      "en": "Jul 2024 – current"
+    },
+    "roles": [
+      {
+        "id": "analista-programador-accenture-posadas",
+        "role": {
+          "es": "Analista Programador - Proyecto Posadas",
+          "en": "Systems Analyst & Programmer - Project Posadas"
+        },
+        "period": {
+          "es": "nov 2023 – actual",
+          "en": "nov 2023 – current"
+        },
+        "description": {
+          "es": "Lideré el desarrollo de una plataforma web aplicando MVC y optimicé el rendimiento del equipo.",
+          "en": "Led the development of a web platform applying MVC pattern and optimized team performance."
+        },
+        "technologies": [
+          {
+            "name": "Java 8",
+            "short": "J8"
+          },
+          {
+            "name": "Java 25",
+            "short": "J25"
+          },
+          {
+            "name": "Vue.js",
+            "short": "Vue"
+          },
+          {
+            "name": "OracleDB",
+            "short": "DB"
+          },
+          {
+            "name": "WebLogic",
+            "short": "WL"
+          },
+          {
+            "name": "WildFly",
+            "short": "WF"
+          },
+          {
+            "name": "Redis",
+            "short": "Rds"
+          },
+          {
+            "name": "Oracle Linux",
+            "short": "OL"
+          },
+          {
+            "name": "Maven",
+            "short": "Mvn"
+          },
+          {
+            "name": "TortoiseSVN",
+            "short": "SVN"
+          },
+          {
+            "name": "Bugzilla",
+            "short": "Bug"
+          },
+          {
+            "name": "Kanboard",
+            "short": "Kan"
+          }
+        ]
+      },
+      {
+        "id": "analista-programador-accenture-bbva",
+        "role": {
+          "es": "Analista Programador - Proyecto BBVA",
+          "en": "Systems Analyst & Programmer - Project BBVA"
+        },
+        "period": {
+          "es": "jul 2024 – nov 2024",
+          "en": "jul 2024 – nov 2024"
+        },
+        "description": {
+          "es": "Desarrollé funcionalidades frontend y backend para la plataforma web.",
+          "en": "Developed frontend and backend features for the web platform."
+        },
+        "technologies": [
+          {
+            "name": "Java",
+            "short": "Ja"
+          },
+          {
+            "name": "Spring Boot",
+            "short": "SB"
+          },
+          {
+            "name": "Docker",
+            "short": "Doc"
+          },
+          {
+            "name": "Kubernetes",
+            "short": "K8s"
+          },
+          {
+            "name": "Bitbucket",
+            "short": "BB"
+          },
+          {
+            "name": "APX",
+            "short": "APX"
+          },
+          {
+            "name": "Maven",
+            "short": "Mvn"
+          },
+          {
+            "name": "SQL",
+            "short": "SQL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "analista-programador-coltomex",
+    "period": {
+      "es": "dic 2022 – abr 2024",
+      "en": "Dec 2022 – Apr 2024"
+    },
+    "role": {
+      "es": "Analista Programador",
+      "en": "Systems Analyst & Programmer"
+    },
+    "organization": "Coltomex",
+    "description": {
+      "es": "Diseño y optimización de soluciones algorítmicas, desarrollo de microservicios REST backend, automatización de procesos en entornos Windows/Linux, administración de servidores y gestión de bases de datos bajo metodologías ágiles SCRUM.",
+      "en": "Design and optimization of algorithmic solutions, development of backend REST microservices, process automation in Windows/Linux environments, server administration, and database management under agile SCRUM methodologies."
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "short": "Java"
+      },
+      {
+        "name": "Spring Boot",
+        "short": "SB"
+      },
+      {
+        "name": "C++",
+        "short": "C++"
+      },
+      {
+        "name": "MongoDB",
+        "short": "MDB"
+      },
+      {
+        "name": "MySQL",
+        "short": "SQL"
+      },
+      {
+        "name": "Linux",
+        "short": "Lin"
+      }
+    ]
+  },
+  {
+    "id": "bitacora-digital-cecytem",
+    "period": {
+      "es": "jul 2022 – nov 2024",
+      "en": "Jul 2022 – Nov 2024"
+    },
+    "role": {
+      "es": "Desarrollador de Software",
+      "en": "Software Developer"
+    },
+    "organization": "Cecytem",
+    "description": {
+      "es": "Diseño y desarrollo de 'Mi Bitácora Digital', una plataforma web para optimizar la gestión académica, control de asistencia estudiantil, reportes docentes y comunicación automatizada con tutores.",
+      "en": "Design and development of 'Mi Bitácora Digital', a web platform to optimize academic management, student attendance tracking, teacher reporting, and automated communication with tutors."
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "short": "Java"
+      },
+      {
+        "name": "Spring Boot",
+        "short": "SB"
+      },
+      {
+        "name": "OracleDB",
+        "short": "DB"
+      },
+      {
+        "name": "Bootstrap",
+        "short": "Bs"
+      },
+      {
+        "name": "Maven",
+        "short": "Mvn"
+      },
+      {
+        "name": "HTML5",
+        "short": "HTML"
+      },
+      {
+        "name": "CSS",
+        "short": "CSS"
+      }
+    ]
+  },
+  {
+    "id": "project-leader-sdm",
+    "period": {
+      "es": "ene 2021 – jul 2022",
+      "en": "Jan 2021 – Jul 2022"
+    },
+    "role": {
+      "es": "Líder de Proyecto",
+      "en": "Project Leader"
+    },
+    "organization": "SDM – Global",
+    "description": {
+      "es": "Lideré el desarrollo de una plataforma web (cotizador) bajo el patrón de diseño MVC, coordinando la comunicación interna y optimizando el rendimiento del equipo mediante evaluaciones continuas y retroalimentación constructiva.",
+      "en": "Led the development of a web quotation platform under the MVC design pattern, coordinating internal communication and optimizing team performance through continuous evaluations and constructive feedback."
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "short": "Java"
+      },
+      {
+        "name": "HTML5",
+        "short": "HTML"
+      },
+      {
+        "name": "CSS",
+        "short": "CSS"
+      },
+      {
+        "name": "SQL",
+        "short": "SQL"
+      }
+    ]
+  },
+  {
+    "id": "Academic-background",
+    "period": {
+      "es": "ago 2018 – dic 2022",
+      "en": "aug 2018 – dec 2022"
+    },
+    "role": {
+      "es": "Formacion academica - Ingeniero en Computación",
+      "en": "Academic background - Computer Engineer"
+    },
+    "organization": "UAEMex",
+    "description": {
+      "es": "Un profesional capaz de analizar, diseñar, desarrollar e implementar sistemas computacionales y tecnológicos. Utiliza herramientas informáticas para resolver problemas de su disciplina y de otras, adaptándose con éxito a su entorno y a la sociedad.",
+      "en": "A professional capable of analyzing, designing, developing, and implementing computational and technological systems. They use computing tools to solve problems within their own and other disciplines, successfully adapting to their environment and to society."
+    },
+    "technologies": [
+      {
+        "name": "Java",
+        "short": "Java"
+      },
+      {
+        "name": "HTML5",
+        "short": "HTML"
+      },
+      {
+        "name": "CSS",
+        "short": "CSS"
+      },
+      {
+        "name": "SQL",
+        "short": "SQL"
+      }
+    ]
+  }
+]

@@ -1,0 +1,171 @@
+---
+import experienceData from "../../content/experience/experience.json";
+import certificationsData from "../../content/certs/certifications.json";
+import type {
+  Certification,
+  Experience,
+  ExperiencePosition,
+  Technology,
+} from "../../types/portfolio";
+import CertificationCard from "../ui/CertificationCard";
+import LocalizedText from "../common/LocalizedText.astro";
+import SectionHeading from "../common/SectionHeading.astro";
+
+const experience = experienceData as Experience[];
+const certifications = certificationsData as Certification[];
+
+const placeholderCertification: Certification = {
+  id: "placeholder",
+  name: {
+    es: "-- Agregar una certificación verificada --",
+    en: "Add a verified certification",
+  },
+  issuer: {
+    es: "Entidad emisora y badge de validación",
+    en: "Issuer and validation badge",
+  },
+  date: { es: "Pendiente", en: "Pending" },
+  validationUrl: null,
+  placeholder: true,
+};
+
+const getPositions = (item: Experience): ExperiencePosition[] =>
+  item.positions ?? item.roles ?? [];
+const getTechnologies = (technologies?: Technology[]): Technology[] =>
+  technologies ?? [];
+---
+
+<section
+  id="experiencia"
+  class="theme-transition bg-surface-deep/55 py-20 sm:py-24 lg:py-32"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowEs="Trayectoria"
+      eyebrowEn="Trajectory"
+      titleEs="Experiencia & Certificaciones"
+      titleEn="Experience & Certifications"
+      descriptionEs="Un recorrido por mi evolución en el desarrollo de software, destacando roles clave, proyectos de impacto y certificaciones que respaldan mis habilidades técnicas."
+      descriptionEn="A journey through my evolution in software development, highlighting key roles, impact projects and certifications that support my technical skills."
+    />
+
+    <div class="grid gap-12 lg:grid-cols-[1.25fr_.75fr] lg:gap-16">
+      <div>
+        <h3 class="type-h3 mb-7 text-text-primary">
+          <LocalizedText es="Experiencia" en="Experience" />
+        </h3>
+        <div class="relative border-l border-border pl-6 sm:pl-8">
+          {
+            experience.map((item) => {
+              const positions = getPositions(item);
+              const isMultiRole = positions.length > 0;
+
+              return (
+                <article class="relative pb-12 last:pb-0">
+                  <span
+                    class="absolute -left-[1.85rem] top-1.5 size-3 rounded-full border-2 border-base bg-accent sm:-left-[2.35rem]"
+                    aria-hidden="true"
+                  />
+
+                  <LocalizedText
+                    es={item.period.es}
+                    en={item.period.en}
+                    class="type-caption font-mono font-bold tracking-[0.14em] text-accent"
+                  />
+
+                  <h4 class="type-h3 mt-2 text-text-primary">
+                    {item.organization}
+                  </h4>
+
+                  {isMultiRole ? (
+                    <div class="mt-5 space-y-6 border-l border-border/60 pl-5 sm:pl-6">
+                      {positions.map((position) => (
+                        <section class="relative">
+                          <span
+                            class="absolute -left-[1.45rem] top-1.5 size-2 rounded-full bg-accent sm:-left-[1.7rem]"
+                            aria-hidden="true"
+                          />
+
+                          <LocalizedText
+                            es={position.period.es}
+                            en={position.period.en}
+                            class="type-caption font-mono font-semibold tracking-[0.08em] text-text-muted"
+                          />
+
+                          <h5 class="type-body-lg mt-1 font-semibold text-text-primary">
+                            <LocalizedText
+                              es={position.role.es}
+                              en={position.role.en}
+                            />
+                          </h5>
+
+                          <LocalizedText
+                            as="p"
+                            es={position.description.es}
+                            en={position.description.en}
+                            class="type-body mt-2 text-text-secondary leading-relaxed"
+                          />
+
+                          {position.technologies.length > 0 && (
+                            <div class="mt-3 flex flex-wrap gap-1.5">
+                              {position.technologies.map((tech) => (
+                                <span class="type-badge inline-flex items-center rounded-full border border-border/50 bg-surface/50 px-2.5 py-0.5 text-xs text-text-secondary">
+                                  {tech.name}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </section>
+                      ))}
+                    </div>
+                  ) : (
+                    <>
+                      {item.role && (
+                        <p class="type-body-sm mt-1 font-medium text-text-muted">
+                          <LocalizedText es={item.role.es} en={item.role.en} />
+                        </p>
+                      )}
+                      {item.description && (
+                        <LocalizedText
+                          as="p"
+                          es={item.description.es}
+                          en={item.description.en}
+                          class="type-body mt-3 max-w-2xl text-text-secondary leading-relaxed"
+                        />
+                      )}
+                      {getTechnologies(item.technologies).length > 0 && (
+                        <div class="mt-4 flex flex-wrap gap-1.5">
+                          {getTechnologies(item.technologies).map((tech) => (
+                            <span class="type-badge inline-flex items-center rounded-full border border-border/50 bg-surface/50 px-2.5 py-0.5 text-xs text-text-secondary">
+                              {tech.name}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  )}
+                </article>
+              );
+            })
+          }
+        </div>
+      </div>
+
+      <div>
+        <h3 class="type-h3 mb-7 text-text-primary">
+          <LocalizedText es="Credenciales digitales" en="Digital credentials" />
+        </h3>
+        <div class="grid gap-4">
+          {
+            (certifications.length > 0
+              ? certifications
+              : [placeholderCertification]
+            ).map((cert) => (
+              <CertificationCard certification={cert} client:visible />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

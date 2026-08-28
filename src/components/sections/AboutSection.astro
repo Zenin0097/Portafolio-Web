@@ -1,0 +1,80 @@
+---
+import { profile } from "../../data/profile";
+import LocalizedText from "../common/LocalizedText.astro";
+import SectionHeading from "../common/SectionHeading.astro";
+---
+
+<section
+  id="sobre-mi"
+  class="theme-transition bg-surface-deep/55 py-20 sm:py-24 lg:py-32"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowEs="Perfil"
+      eyebrowEn="Profile"
+      titleEs="Sobre mí"
+      titleEn="About me"
+      descriptionEs="Software eficiente, arquitectura limpia y una interfaz cuidada sin sacrificar rendimiento."
+      descriptionEn="Efficient software, clean architecture, and thoughtful interfaces without sacrificing performance."
+    />
+
+    <div class="grid items-center gap-9 lg:grid-cols-[.8fr_1.2fr] lg:gap-16">
+      <div class="relative mx-auto w-full max-w-md lg:mx-0">
+        <div
+          class="absolute -inset-4 -z-10 rounded-[2.25rem] bg-accent/10 blur-2xl"
+        >
+        </div>
+        <img
+          src="/Portafolio-Dev/assets/images/profile-placeholder.png"
+          alt="Alejandro Robles profile placeholder"
+          loading="lazy"
+          decoding="async"
+          class="aspect-[4/5] w-full rounded-[2rem] border border-border bg-surface object-cover shadow-2xl"
+        />
+        <div
+          class="glass-panel absolute inset-x-4 bottom-4 rounded-2xl p-4 sm:inset-x-5 sm:bottom-5"
+        >
+          <p class="type-label text-accent">{profile.brand}</p>
+          <p class="type-caption mt-1 text-text-subtle">{profile.location}</p>
+        </div>
+      </div>
+
+      <div>
+        <LocalizedText
+          as="p"
+          es={profile.bio}
+          en="I am a software engineer passionate about creating efficient tools, clean architectures, and user experiences. I enjoy learning new technologies and solving problems, always seeking to overcome new challenges and push myself to take every project to the next level."
+          class="type-body-lg text-text-primary"
+        />
+        <LocalizedText
+          as="p"
+          es="Con más de 4 años de experiencia, me especializo en crear soluciones a la medida, explorando nuevas ideas e integrándolas al mundo real para impulsar el crecimiento de cada cliente."
+          en="With over four years of experience, I specialize in creating tailored solutions, exploring new ideas, and integrating them into the real world to drive growth for each client."
+          class="type-body mt-5 text-text-secondary"
+        />
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href={profile.socials.github}
+            target="_blank"
+            rel="noreferrer"
+            class="type-button rounded-xl border border-border bg-surface px-4 py-3 text-text-primary transition duration-300 hover:border-accent/50 hover:text-accent"
+            >GitHub</a
+          >
+          <a
+            href={profile.socials.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            class="type-button rounded-xl border border-border bg-surface px-4 py-3 text-text-primary transition duration-300 hover:border-accent/50 hover:text-accent"
+            >LinkedIn</a
+          >
+          <!-- <a
+            href={`mailto:${profile.socials.email}`}
+            class="type-button rounded-xl border border-border bg-surface px-4 py-3 text-text-primary transition duration-300 hover:border-accent/50 hover:text-accent"
+          >
+            <LocalizedText es="Contactar" en="Contact" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

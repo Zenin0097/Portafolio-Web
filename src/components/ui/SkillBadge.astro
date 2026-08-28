@@ -1,0 +1,55 @@
+---
+import { getSkillIcon } from "../../shared/icons/registry";
+
+interface Props {
+  name: string;
+  short: string;
+}
+
+const { name, short } = Astro.props;
+const Icon = getSkillIcon(name);
+---
+
+<div
+  class="group theme-transition flex min-h-24 flex-col items-center justify-center gap-3 rounded-2xl border border-border bg-surface px-3 py-4 text-center shadow-sm hover:border-accent/35 hover:bg-surface-raised/40 hover:shadow-md focus-within:border-accent/35"
+>
+  {
+    Icon ? (
+      <Icon
+        className="tech-mark size-9 text-text-muted"
+        role="img"
+        aria-label={`${name} icon`}
+      />
+    ) : (
+      <svg
+        class="tech-mark size-9 text-text-muted"
+        viewBox="0 0 48 48"
+        role="img"
+        aria-label={`${name} icon`}
+      >
+        <rect
+          x="3"
+          y="3"
+          width="42"
+          height="42"
+          rx="12"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <text
+          x="24"
+          y="29"
+          text-anchor="middle"
+          fill="currentColor"
+          font-size="13"
+          font-family="ui-monospace, monospace"
+          font-weight="700"
+        >
+          {short}
+        </text>
+      </svg>
+    )
+  }
+  <span class="type-badge text-text-primary">{name}</span>
+</div>

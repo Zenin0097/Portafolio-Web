@@ -1,0 +1,21 @@
+---
+import projectsData from "../../content/projects/projects.json";
+import type { Project } from "../../types/portfolio";
+import DynamicGrid from "../ui/DynamicGrid";
+import SectionHeading from "../common/SectionHeading.astro";
+const projects = projectsData as Project[];
+---
+
+<section id="proyectos" class="py-20 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <SectionHeading
+      eyebrowEs="Proyectos destacados"
+      eyebrowEn="Featured projects"
+      titleEs="IDEAS HECHAS CÓDIGO"
+      titleEn="IDEAS TURNED INTO CODE"
+      descriptionEs="'Si lo puedes imaginar, lo puedes programar.' Esta filosofía ha impulsado cada línea de código que escribo. Aquí presento una selección de mis trabajos más recientes, donde la lógica se une con la creatividad para construir soluciones reales, funcionales y escalables. Cada proyecto refleja mi pasión por el desarrollo y el aprendizaje continuo."
+      descriptionEn="'Si lo puedes imaginar, lo puedes programar.' This philosophy has driven every line of code I write. Here, I present a selection of my most recent work, where logic meets creativity to build real, functional, and scalable solutions. Each project reflects my passion for development and continuous learning."
+    />
+    <DynamicGrid projects={projects} client:visible />
+  </div>
+</section>

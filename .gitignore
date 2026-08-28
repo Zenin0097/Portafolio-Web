@@ -1,0 +1,14 @@
+#Dependencias
+node_modules/
+
+#Documentos
+Docs/
+
+#Astro
+.astro/
+
+#Cache/
+.cache/
+
+#Build
+dist/

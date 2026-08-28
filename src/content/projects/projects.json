@@ -1,0 +1,26 @@
+[
+  {
+    "id": "privpass",
+    "name": "PrivPass",
+    "description": {
+      "es": "Gestor de contraseñas seguro y privado que te ayuda a almacenar, organizar y proteger tus credenciales. Incluye herramientas de generación de claves, auditorías de seguridad, respaldos y control absoluto de tu información.",
+      "en": "A secure and private password manager that helps you store, organize, and protect your credentials. It includes tools for password generation, security audits, backups, and absolute control over your information."
+    },
+    "status": { "es": "En producción", "en": "In production" },
+    "image": "/Portafolio-Dev/assets/images/project-privpass.png",
+    "imageAlt": {
+      "es": "Mockup conceptual de PrivPass",
+      "en": "Conceptual PrivPass mockup"
+    },
+    "url": null,
+    "technologies": [
+      { "name": "React" },
+      { "name": "Tailwind CSS" },
+      { "name": "Zustand" },
+      { "name": "TypeScript" },
+      { "name": "Rust" },
+      { "name": "Tauri 2" },
+      { "name": "Tauri Commands" }
+    ]
+  }
+]

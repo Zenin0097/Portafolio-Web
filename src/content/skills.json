@@ -1,0 +1,211 @@
+[
+  {
+    "id": "backend",
+    "title": {
+      "es": "Backend & Bases de Datos",
+      "en": "Backend & Databases"
+    },
+    "description": {
+      "es": "Tecnologías, frameworks y patrones utilizados para desarrollo de APIs, microservicios, aplicaciones de escritorio y persistencia de datos.",
+      "en": "Technologies, frameworks, and patterns used for API development, microservices, desktop applications, and data persistence."
+    },
+    "skills": [
+      {
+        "name": "Java",
+        "short": "Java",
+        "category": "Languages"
+      },
+      {
+        "name": "C++",
+        "short": "C++",
+        "category": "Languages"
+      },
+      {
+        "name": "Python",
+        "short": "Py",
+        "category": "Languages"
+      },
+      {
+        "name": "Rust",
+        "short": "Rs",
+        "category": "Languages"
+      },
+      {
+        "name": "Spring Boot",
+        "short": "SB",
+        "category": "Frameworks & Libs"
+      },
+      {
+        "name": "Spring Data JPA",
+        "short": "JPA",
+        "category": "Frameworks & Libs"
+      },
+      {
+        "name": "Tauri",
+        "short": "Ta",
+        "category": "Frameworks & Libs"
+      },
+      {
+        "name": "Serde",
+        "short": "Se",
+        "category": "Frameworks & Libs"
+      },
+      {
+        "name": "REST APIs",
+        "short": "REST",
+        "category": "Architecture"
+      },
+      {
+        "name": "Microservices",
+        "short": "MS",
+        "category": "Architecture"
+      },
+      {
+        "name": "PostgreSQL",
+        "short": "PG",
+        "category": "Databases"
+      },
+      {
+        "name": "MariaDB",
+        "short": "MDB",
+        "category": "Databases"
+      },
+      {
+        "name": "SQL",
+        "short": "SQL",
+        "category": "Databases"
+      },
+      {
+        "name": "MongoDB",
+        "short": "Mongo",
+        "category": "Databases"
+      },
+      {
+        "name": "Maven",
+        "short": "Mvn",
+        "category": "Tools"
+      }
+    ]
+  },
+  {
+    "id": "frontend",
+    "title": {
+      "es": "Frontend",
+      "en": "Frontend"
+    },
+    "description": {
+      "es": "Tecnologías utilizadas para construir interfaces web modernas, tipadas, responsivas y orientadas a componentes.",
+      "en": "Technologies used to build modern, typed, responsive, and component-driven web interfaces."
+    },
+    "skills": [
+      {
+        "name": "TypeScript",
+        "short": "TS",
+        "category": "Languages"
+      },
+      {
+        "name": "JavaScript",
+        "short": "JS",
+        "category": "Languages"
+      },
+      {
+        "name": "HTML 5",
+        "short": "HTML",
+        "category": "Languages"
+      },
+      {
+        "name": "CSS 3",
+        "short": "CSS",
+        "category": "Languages"
+      },
+      {
+        "name": "React",
+        "short": "Re",
+        "category": "Frameworks & UI"
+      },
+      {
+        "name": "Astro",
+        "short": "As",
+        "category": "Frameworks & UI"
+      },
+      {
+        "name": "Tailwind CSS",
+        "short": "Tw",
+        "category": "Frameworks & UI"
+      },
+      {
+        "name": "Framer Motion",
+        "short": "FM",
+        "category": "Frameworks & UI"
+      },
+      {
+        "name": "Zustand",
+        "short": "Zu",
+        "category": "State & Libs"
+      },
+      {
+        "name": "react-i18next",
+        "short": "i18n",
+        "category": "State & Libs"
+      },
+      {
+        "name": "Responsive Design",
+        "short": "RWD",
+        "category": "Concepts"
+      }
+    ]
+  },
+  {
+    "id": "ai-engineering",
+    "title": {
+      "es": "IA & Modelos Locales",
+      "en": "AI & Local Models"
+    },
+    "description": {
+      "es": "Herramientas, entornos de ejecución local e integraciones de modelos de lenguaje para optimización de desarrollo y aplicaciones inteligentes.",
+      "en": "Tools, local runtimes, and LLM integrations for developer workflow optimization and intelligent application development."
+    },
+    "skills": [
+      {
+        "name": "Ollama",
+        "short": "Ol",
+        "category": "Local Runtimes"
+      },
+      {
+        "name": "Continue",
+        "short": "Cnt",
+        "category": "Dev AI Tools"
+      },
+      {
+        "name": "Local LLMs",
+        "short": "LLM",
+        "category": "Models"
+      },
+      {
+        "name": "DeepSeek Coder",
+        "short": "DSC",
+        "category": "Models"
+      },
+      {
+        "name": "Qwen",
+        "short": "Qw",
+        "category": "Models"
+      },
+      {
+        "name": "LangChain",
+        "short": "LC",
+        "category": "Frameworks"
+      },
+      {
+        "name": "RAG",
+        "short": "RAG",
+        "category": "Concepts"
+      },
+      {
+        "name": "Prompt Engineering",
+        "short": "PE",
+        "category": "Concepts"
+      }
+    ]
+  }
+]

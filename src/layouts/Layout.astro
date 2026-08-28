@@ -1,0 +1,92 @@
+---
+import { profile } from "../data/profile";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = `${profile.brand} — ${profile.tagline}`,
+  description = profile.bio,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="es" data-theme="dark" data-lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/Portafolio-Dev/favicon.svg" />
+    <title>{title}</title>
+    <script is:inline>
+      (() => {
+        const DEFAULT_THEME = "dark";
+        const META_THEME_COLOR_DARK = "#0f172a";
+        const META_THEME_COLOR_LIGHT = "#f8fafc";
+
+        try {
+          const storedTheme = localStorage.getItem("portfolio-theme");
+          const systemTheme = window.matchMedia?.(
+            "(prefers-color-scheme: dark)",
+          ).matches
+            ? "dark"
+            : "light";
+          const theme =
+            storedTheme === "light" || storedTheme === "dark"
+              ? storedTheme
+              : systemTheme || DEFAULT_THEME;
+
+          const storedLanguage = localStorage.getItem("portfolio-language");
+          const language =
+            storedLanguage === "es" || storedLanguage === "en"
+              ? storedLanguage
+              : navigator.language.toLowerCase().startsWith("en")
+                ? "en"
+                : "es";
+
+          const root = document.documentElement;
+          const isDark = theme === "dark";
+
+          root.dataset.theme = theme;
+          root.classList.toggle("dark", isDark);
+          root.style.colorScheme = theme;
+          root.dataset.lang = language;
+          root.lang = language;
+
+          const metaThemeColor = document.querySelector(
+            'meta[name="theme-color"]',
+          );
+          if (metaThemeColor) {
+            metaThemeColor.setAttribute(
+              "content",
+              isDark ? META_THEME_COLOR_DARK : META_THEME_COLOR_LIGHT,
+            );
+          }
+        } catch {
+          const root = document.documentElement;
+          root.dataset.theme = DEFAULT_THEME;
+          root.classList.add("dark");
+          root.style.colorScheme = DEFAULT_THEME;
+        }
+      })();
+    </script>
+  </head>
+  <body class="theme-transition">
+    <!-- <a
+      href="#contenido"
+      class="type-button fixed left-3 top-3 z-[100] -translate-y-24 rounded-lg bg-accent px-4 py-2 text-on-accent transition focus:translate-y-0"
+      >Saltar al contenido / Skip to content</a
+    > -->
+    <slot />
+    <script is:inline>
+      requestAnimationFrame(() =>
+        document.documentElement.classList.add("theme-ready"),
+      );
+    </script>
+  </body>
+</html>

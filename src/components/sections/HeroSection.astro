@@ -1,0 +1,67 @@
+---
+import { profile } from "../../data/profile";
+import LocalizedText from "../common/LocalizedText.astro";
+---
+
+<section
+  id="inicio"
+  class="hero-grid relative isolate flex min-h-[100svh] items-center overflow-hidden pt-24"
+>
+  <div
+    class="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28"
+  >
+    <div class="max-w-4xl">
+      <div
+        class="type-badge mb-5 inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-3 py-1.5 font-mono text-accent"
+      >
+        <span class="size-1.5 rounded-full bg-accent"></span>
+        <LocalizedText es={profile.location} en={"Mexico, Mexico City"} />
+      </div>
+
+      <h1 class="type-h1 text-text-primary">
+        <span class="lang-es">Soy {profile.name}</span>
+        <span class="lang-en">I'm {profile.name}</span>
+      </h1>
+      <p class="type-subtitle mt-4 text-accent">
+        <LocalizedText es={profile.tagline} en={"Software Engineer"} />
+      </p>
+      <LocalizedText
+        es={profile.bio}
+        en="I am a software engineer passionate about creating efficient tools, clean architectures, and user experiences. I enjoy learning new technologies and solving problems, always seeking to overcome new challenges and push myself to take every project to the next level."
+        class="type-body-lg mt-6 max-w-2xl text-text-secondary"
+      />
+
+      <div
+        class="mt-9 grid max-w-3xl grid-cols-1 gap-3 sm:grid-cols-2 lg:flex lg:flex-wrap"
+      >
+        <a
+          href={profile.socials.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          class="type-button inline-flex min-h-12 items-center justify-center rounded-xl bg-accent px-5 py-3 text-on-accent shadow-lg shadow-accent/10 transition duration-300 hover:-translate-y-0.5 hover:bg-accent-dim"
+          >LinkedIn</a
+        >
+        <a
+          href={profile.socials.github}
+          target="_blank"
+          rel="noreferrer"
+          class="type-button theme-transition inline-flex min-h-12 items-center justify-center rounded-xl border border-border bg-surface px-5 py-3 text-text-primary transition duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent"
+          >GitHub</a
+        >
+        <a
+          href={`mailto:${profile.socials.email}`}
+          class="type-button theme-transition inline-flex min-h-12 items-center justify-center rounded-xl border border-border bg-surface px-5 py-3 text-text-primary transition duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent"
+        >
+          <LocalizedText es="Correo directo" en="Email me" />
+        </a>
+        <a
+          href="/assets/docs/Alejandro-Robles-CV.pdf"
+          download
+          class="type-button theme-transition inline-flex min-h-12 items-center justify-center rounded-xl border border-border bg-surface px-5 py-3 text-text-primary transition duration-300 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent"
+        >
+          <LocalizedText es="Descargar CV (PDF)" en="Download CV (PDF)" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
