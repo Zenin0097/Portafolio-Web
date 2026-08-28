@@ -7,7 +7,7 @@
       "en": "A secure and private password manager that helps you store, organize, and protect your credentials. It includes tools for password generation, security audits, backups, and absolute control over your information."
     },
     "status": { "es": "En producción", "en": "In production" },
-    "image": "/Portafolio-Dev/assets/images/project-privpass.png",
+    "image": "/Portafolio-Web/assets/images/project-privpass.png",
     "imageAlt": {
       "es": "Mockup conceptual de PrivPass",
       "en": "Conceptual PrivPass mockup"
