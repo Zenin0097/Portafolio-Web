@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://Zenin0097.github.io",
-  base: "/Portafolio-Dev",
+  base: "/Portafolio-Web",
 
   output: "static",
   integrations: [react()],
