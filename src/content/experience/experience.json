@@ -3,23 +3,23 @@
     "id": "accenture",
     "organization": "ACCENTURE",
     "period": {
-      "es": "jul 2024 – actual",
-      "en": "Jul 2024 – current"
+      "es": "nov 2024 – actual",
+      "en": "nov 2024 – current"
     },
     "roles": [
       {
         "id": "analista-programador-accenture-posadas",
         "role": {
-          "es": "Analista Programador - Proyecto Posadas",
-          "en": "Systems Analyst & Programmer - Project Posadas"
+          "es": "Ingeniero de software personalizado - Proyecto Posadas",
+          "en": "Custom Software Engineer - Project Posadas"
         },
         "period": {
           "es": "nov 2023 – actual",
           "en": "nov 2023 – current"
         },
         "description": {
-          "es": "Lideré el desarrollo de una plataforma web aplicando MVC y optimicé el rendimiento del equipo.",
-          "en": "Led the development of a web platform applying MVC pattern and optimized team performance."
+          "es": "Diseño e implementación de software a la medida de los requerimientos del cliente, colaborando en equipos bajo metodología en cascada. Desarrollo e integración de servicios REST en el backend, complementados con soluciones de interfaz frontend mediante Vue.js y servlets. Especialista en la optimización de servicios en entornos productivos y en la administración avanzada de servidores de aplicaciones (WebLogic y WildFly), integrando flujos de automatización DevOps a través de Jenkins.",
+          "en": "Design and implementation of software tailored to client requirements, working in teams using the Waterfall methodology. Development and integration of backend REST services, complemented by frontend interface solutions using Vue.js and servlets. Specialist in service optimization within production environments and advanced application server administration (WebLogic and WildFly), integrating DevOps automation workflows via Jenkins."
         },
         "technologies": [
           {
@@ -69,22 +69,26 @@
           {
             "name": "Kanboard",
             "short": "Kan"
+          },
+          {
+            "name": "Jenkins",
+            "short": "Jenk"
           }
         ]
       },
       {
         "id": "analista-programador-accenture-bbva",
         "role": {
-          "es": "Analista Programador - Proyecto BBVA",
-          "en": "Systems Analyst & Programmer - Project BBVA"
+          "es": "Ingeniero de software personalizado - Proyecto Next-Gen BBVA México",
+          "en": "Custom Software Engineer - Project Next-Gen BBVA México"
         },
         "period": {
           "es": "jul 2024 – nov 2024",
           "en": "jul 2024 – nov 2024"
         },
         "description": {
-          "es": "Desarrollé funcionalidades frontend y backend para la plataforma web.",
-          "en": "Developed frontend and backend features for the web platform."
+          "es": "Diseño y arquitectura de soluciones tecnológicas alineadas con los objetivos de negocio bajo la metodología APX, operando en equipos multidisciplinarios mediante marcos de trabajo ágiles (Scrum). Desarrollo de microservicios REST en el backend, integrando prácticas y herramientas DevOps como Bitbucket, Docker y Kubernetes para garantizar la escalabilidad y eficiencia operativa.",
+          "en": "Designing and architecting technology solutions aligned with business objectives using the APX methodology, while working in multidisciplinary teams within Agile (Scrum) frameworks. Developing backend REST microservices and integrating DevOps practices and tools—such as Bitbucket, Docker, and Kubernetes—to ensure scalability and operational efficiency."
         },
         "technologies": [
           {
@@ -127,7 +131,7 @@
     "id": "analista-programador-coltomex",
     "period": {
       "es": "dic 2022 – abr 2024",
-      "en": "Dec 2022 – Apr 2024"
+      "en": "dec 2022 – apr 2024"
     },
     "role": {
       "es": "Analista Programador",
@@ -168,8 +172,8 @@
   {
     "id": "bitacora-digital-cecytem",
     "period": {
-      "es": "jul 2022 – nov 2024",
-      "en": "Jul 2022 – Nov 2024"
+      "es": "jul 2022 – nov 2022",
+      "en": "jul 2022 – nov 2022"
     },
     "role": {
       "es": "Desarrollador de Software",
@@ -214,8 +218,8 @@
   {
     "id": "project-leader-sdm",
     "period": {
-      "es": "ene 2021 – jul 2022",
-      "en": "Jan 2021 – Jul 2022"
+      "es": "ene 2022 – may 2022",
+      "en": "jan 2022 – may 2022"
     },
     "role": {
       "es": "Líder de Proyecto",

@@ -14,21 +14,5 @@
       "en": "August 2026"
     },
     "validationUrl": "https://example.com/credential"
-  },
-  {
-    "id": "oracle-java-se-17",
-    "name": {
-      "es": "Oracle Certified Professional: Java SE 17 Developer",
-      "en": "Oracle Certified Professional: Java SE 17 Developer"
-    },
-    "issuer": {
-      "es": "Oracle",
-      "en": "Oracle"
-    },
-    "date": {
-      "es": "Agosto 2026",
-      "en": "August 2026"
-    },
-    "validationUrl": "https://example.com/credential"
   }
 ]
