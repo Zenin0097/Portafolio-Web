@@ -6,8 +6,8 @@
       "en": "Backend & Databases"
     },
     "description": {
-      "es": "Tecnologías, frameworks y patrones utilizados para desarrollo de APIs, microservicios, aplicaciones de escritorio y persistencia de datos.",
-      "en": "Technologies, frameworks, and patterns used for API development, microservices, desktop applications, and data persistence."
+      "es": "La base sólida y escalable: arquitecturas eficientes, microservicios y persistencia segura de datos.",
+      "en": "The solid and scalable foundation: efficient architectures, microservices and secure data persistence."
     },
     "skills": [
       {
@@ -94,8 +94,8 @@
       "en": "Frontend"
     },
     "description": {
-      "es": "Tecnologías utilizadas para construir interfaces web modernas, tipadas, responsivas y orientadas a componentes.",
-      "en": "Technologies used to build modern, typed, responsive, and component-driven web interfaces."
+      "es": "La capa visual a la vanguardia: interfaces modernas, tipadas, altamente reactivas y optimizadas.",
+      "en": "A cutting-edge visual layer: modern, strongly typed, highly reactive, and optimized interfaces."
     },
     "skills": [
       {
@@ -162,8 +162,8 @@
       "en": "AI & Local Models"
     },
     "description": {
-      "es": "Herramientas, entornos de ejecución local e integraciones de modelos de lenguaje para optimización de desarrollo y aplicaciones inteligentes.",
-      "en": "Tools, local runtimes, and LLM integrations for developer workflow optimization and intelligent application development."
+      "es": "La potencia de la IA: integración de modelos y herramientas inteligentes para llevar el desarrollo al siguiente nivel.",
+      "en": "The power of AI: integrating intelligent models and tools to take development to the next level."
     },
     "skills": [
       {
